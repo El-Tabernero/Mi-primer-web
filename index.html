@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shorcut icon" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="navegacion">
+            <img src="imagenes/Logo LT transparente.png" class="navegacion__imagenfondo">
+            <a class="navegacion__enlace" href="#presentacion">
+                <h2 class="navegacion__titulo">Portfolio</h2>
+            </a>
+            <ul class="enlaces">
+                <li class="enlaces__item">
+                    <a class= "enlaces__enlace" href="#presentacion">Inicio</a>
+                </li>
+                <li class="enlaces__item">
+                    <a class= "enlaces__enlace" href="#sobre-mi">Sobre Mi</a>
+                </li>
+                <li class="enlaces__item">
+                    <a class= "enlaces__enlace" href="#proyectos">Galería</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="principal">
+        <section class="presentacion" id="presentacion">
+            <div class="presentacion__contenedor_info">
+                <h1 class="presentación__titulo"> Soy Rodrigo Dojas!</h1>
+                <p class="presentación__parrafo">Bienvenido a mi portfolio! Verás a continuación mis trabajos como fotógrafo, realizador audiovisual, 3D y programación</p>
+                <div class="presentacion__contenedor_botones">
+                    <a href="#sobre_mi" class="boton" role="button">Sobre mí</a>
+                    <a href="assets/docs/CV-Rodrigo Dojas.pdf" target="_blank" class="boton boton_oscuro" role="burron">Descargar CV</a>
+                </div>
+            </div>
+        </section>
+        <article class="articulo sobre_mi" id="sobre-mi">
+            <h2 class="articulo__titulo">Un poco sobre mí</h2>
+            <div class="articulo__contenedor_descripciones">
+                <section class="seccion__descripcion">
+                    <div class="seccion__descripcion__porta__retrato">
+                        <img 
+                         class="seccion_descripcion__imagen"
+                         src="imagenes/Yo.png"
+                         alt="Trabajando en mi documental El problema del Cartero"
+                         tittle="Trabajando"
+                         >
+                    </div>
+                    <div
+                         class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+                         aria-label="Descripcion Personal">
+                         
+                          <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                            Mi historia:
+                          </h3>
+                          <p
+                          class="seccion_descripcion__parrafo"
+                          aria-label="Detalles de mi historia"
+                          aria-describedby="mi_historia_titulo"
+                          >
+                          Soy fotógrafo. Comencé a aprender en 2017 y, ya en 2018, a trabajar de
+                          manera constante como fotógrafo Free Lancer.
+                          En ese mismo año comencé a estudiar la <b>Tecnicatura en diseño de imagen y multimedios</b>
+                          y a la par, a trabajar como Prensa en distintas áreas gubernamentales por los siguientes 6 años.
+                          </p>
+                          <h3 class="seccion_descripcion__titulo" id="aprendizaje_titulo">
+                            ¿Qué aprendí y qué cualidades formé?
+                          </h3>
+                          <p
+                          class="seccion_descripcion__parrafo"
+                          aria-label="Detalles de mi historia"
+                          aria-describedby="mi_historia_titulo"
+                          >
+                          Aprendí mucho del área de trabajar en equipo, con muchas o pocas personas, teniendo que resolver objetivos en conjunto
+                          o para un conjunto. El tener la cabeza abierta para poder alcanzar nuevos conocimientos y
+                          no quedarme estancado en lo nuevo que me propongan.
+                          </p>
+                          <p
+                          class="seccion_descripcion__parrafo"
+                          aria-label="Detalles de mi historia"
+                          aria-describedby="mi_historia_titulo"
+                          >
+                          Esto me llevó a desarrollar habilidades como <b>motion graphics, diseño y motion graphics en 3D
+                          edicion de videos, diseño grafico y filmacion.
+                          </b>
+                           Todo esto que no solo conlleva la creatividad, sino el uso de herramientas desconocidas,
+                           es decir, el uso de herramientas distintas para otros tipos de trabajos que no habituas.
+                           </p>
+                           <h3 class="seccion_descripcion__titulo" id="aprendizaje_herramientas">
+                            ¿Qué herramientas utilizo?
+                          </h3>
+                          <p
+                          class="seccion_descripcion__parrafo"
+                          aria-label="Detalles de mi historia"
+                          aria-describedby="mi_historia_titulo"
+                          >
+                          <ul class="seccion__herramientas">
+                            <li class="seccion__herramientas_items">
+                                Adobe LightRoom
+                            </li>
+                            <li class="seccion__herramientas_items">
+                                Adobe Photoshop
+                            </li>
+                            <li class="seccion__herramientas_items">
+                                Adobe Premiere Pro
+                            </li>
+                            <li class="seccion__herramientas_items">
+                                Adobe After Effects
+                            </li>
+                            <li class="seccion__herramientas_items">
+                                Blender
+                            </li>
+                             
+                          </ul>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <article class="articulo__proyectos" id="proyectos">
+             <h2 class="articulo__titulo">Galería de Eventos Sociales</h2>
+             <div class="contenedor_tarjetas_grid">
+                 <article
+                    class="tarjeta"
+                    aria-label="presentacion de proyectos fotográficos"
+                >
+                  <img
+                     class="tarjeta__imagen"
+                     src="/imagenes/DSC_0125.jpg"
+                     alt="foto wallpaper 1"
+                     title="proyecto1"
+                     >
+                     <div class="tarjeta__contenido">
+                        <h3 class="tarjeta__titulo" id="titulo_proyecto_1"> Ver Galeria de Eventos Sociales</h3>
+                        <span class="tarjeta__divisor"></span>
+                        <p
+                         class="tarjeta__parrafo scroll scroll_fino"
+                         aria-label="descripcion de proyecto personal"
+                         aria-describedby="Paisajes"
+                        >
+                        Trabajos de Fotografía Urbana y Paisajísticas.
+                    </p>
+                    <a href="#" class="boton boton_oscuro" target="_blank"
+                       >Ver proyecto</a>
+
+                     </div>
+            </article>
+             </div>
+        </article>
+    </main> 
+    <footer class="pie_de_pagina" role="contentinfo">
+        <div class="pie_de_pagina__columna">
+            <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
+            <ul class="enlaces enlaces_redes">
+                <li class="enlaces__item">
+                    <a
+                     class="enlaces__enlace enlaces__enlaces__footer"
+                     href="https://www.instagram.com/lt_fotogram/"
+                     target="blank"
+                     >
+                        <img 
+                          class="enlaces_icono"
+                          src="/imagenes/instagram logo.png"
+                          alt="logo de instagram"
+                          title="Instagram">
+                    </a>
+                </li>
+                <li class="enlaces__item">
+                    <a
+                    class="enlaces__enlace enlaces__enlaces__footer"
+                    href="https://www.linkedin.com/in/rodrigo-dojas-230199214/"
+                    target="_blank"
+                    >
+                        <img
+                        class="enlaces_icono"
+                        src="/imagenes/pngwing.com.png"
+                        tittle="Linkedin">
+                    </a> 
+                </li>
+            </ul>
+        </div>
+        <div class="pie_de_pagina__columna">
+            <h4 class="pie_de_pagina__titulo_columna">Contactarme</h4>
+            <ul class="enlaces enlaces_vertical">
+                <a
+                  class="enlaces__enlace enlaces__enlace_footer"
+                  href="mailto:rodri.dojas@gmail.com"
+                  target="blank"
+                  >Mail: rodri.dojas@gmail.com</a>
+            </ul>
+        </div>
+        <div class="pie_de_pagina__columna" role="navigation">
+            <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+            <ul class="enlaces enlaces_vertical">
+                <li class="enlaces__item">
+                    <a
+                      class="enlaces__enlace enlaces__enlace_footer"
+                      href="#presentacion"
+                      >Inicio</a>
+                </li>
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
+                    >Sobre Mi</a>
+                </li>
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace enlaces__enlace_footer" href="#proyecto"
+                    >Proyectos</a>
+
+                </li>
+            </ul>
+        </div>
+        <div class="pie_de_pagina__copyright">
+            <p>©️Copyright 2024</p>
+          </div>
+    </footer> 
+</body>
+</html>
