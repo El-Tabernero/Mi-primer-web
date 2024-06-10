@@ -13,7 +13,7 @@
 <body>
     <header class="encabezado">
         <nav class="navegacion">
-            <img src="imagenes/Logo LT transparente.png" class="navegacion__imagenfondo">
+            
             <a class="navegacion__enlace" href="#presentacion">
                 <h2 class="navegacion__titulo">Portfolio</h2>
             </a>
@@ -37,7 +37,7 @@
                 <p class="presentación__parrafo">Bienvenido a mi portfolio! Verás a continuación mis trabajos como fotógrafo, realizador audiovisual, 3D y programación</p>
                 <div class="presentacion__contenedor_botones">
                     <a href="#sobre_mi" class="boton" role="button">Sobre mí</a>
-                    <a href="assets/docs/CV-Rodrigo Dojas.pdf" target="_blank" class="boton boton_oscuro" role="burron">Descargar CV</a>
+                    <a href="assets/docs/CV-Rodrigo Dojas.pdf" target="_blank" class="boton boton_oscuro" role="button">Descargar CV</a>
                 </div>
             </div>
         </section>
@@ -47,7 +47,7 @@
                 <section class="seccion__descripcion">
                     <div class="seccion__descripcion__porta__retrato">
                         <img 
-                         class="seccion_descripcion__imagen"
+                         class="seccion_descripcion__imagen "
                          src="imagenes/Yo.png"
                          alt="Trabajando en mi documental El problema del Cartero"
                          tittle="Trabajando"
@@ -58,7 +58,7 @@
                          aria-label="Descripcion Personal">
                          
                           <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
-                            Mi historia:
+                            Mi formación:
                           </h3>
                           <p
                           class="seccion_descripcion__parrafo"
@@ -67,8 +67,16 @@
                           >
                           Soy fotógrafo. Comencé a aprender en 2017 y, ya en 2018, a trabajar de
                           manera constante como fotógrafo Free Lancer.
-                          En ese mismo año comencé a estudiar la <b>Tecnicatura en diseño de imagen y multimedios</b>
+                          En ese mismo año comencé a estudiar la <b>Tecnicatura en diseño de imagen y multimedios</b> en la UNNE,
                           y a la par, a trabajar como Prensa en distintas áreas gubernamentales por los siguientes 6 años.
+                          </p>
+                          <p
+                          class="seccion_descripcion__parrafo"
+                          aria-label="Detalles de mi historia"
+                          aria-describedby="mi_historia_titulo"
+                          >
+                          Actualmente estudio <b>Desarrollo de Software</b>
+                          en el Instituto Económico Nacional (IEN).
                           </p>
                           <h3 class="seccion_descripcion__titulo" id="aprendizaje_titulo">
                             ¿Qué aprendí y qué cualidades formé?
@@ -124,33 +132,73 @@
             </div>
         </article>
         <article class="articulo__proyectos" id="proyectos">
-             <h2 class="articulo__titulo">Galería de Eventos Sociales</h2>
+             <h2 class="articulo__titulo"
+                  href="eventos sociales/galeria-eventos-soc.html" 
+                  target="_blank">Galería de Fotos</h2>
              <div class="contenedor_tarjetas_grid">
                  <article
                     class="tarjeta"
                     aria-label="presentacion de proyectos fotográficos"
                 >
-                  <img
-                     class="tarjeta__imagen"
-                     src="/imagenes/DSC_0125.jpg"
-                     alt="foto wallpaper 1"
-                     title="proyecto1"
+                  <a class="enlaces_enlace enlaces_enlaces__galeria"
+                     href="eventos sociales/galeria-eventos-soc.html" 
+                     target="_blank">
+                     <img
+                       class="tarjeta__imagen"
+                       src="/imagenes/DSC_0125.jpg"
+                       alt="foto wallpaper 1"
+                       title="proyecto1"
                      >
+                 </a>
+                     
                      <div class="tarjeta__contenido">
-                        <h3 class="tarjeta__titulo" id="titulo_proyecto_1"> Ver Galeria de Eventos Sociales</h3>
+                        <h3 class="tarjeta__titulo" id="titulo_proyecto_2"
+                         href="eventos sociales/galeria-eventos-soc.html" 
+                         target="_blank" role="button"
+                         >Galeria de Eventos Sociales</h3>
                         <span class="tarjeta__divisor"></span>
                         <p
                          class="tarjeta__parrafo scroll scroll_fino"
                          aria-label="descripcion de proyecto personal"
                          aria-describedby="Paisajes"
                         >
-                        Trabajos de Fotografía Urbana y Paisajísticas.
-                    </p>
-                    <a href="#" class="boton boton_oscuro" target="_blank"
-                       >Ver proyecto</a>
-
+                        Trabajos de Eventos Sociales como bodas, 15's,  cumpleaños, etc.
+                        </p>
+                         <a href="/eventos sociales/galeria-eventos-soc.html" class="boton boton_oscuro" target="_blank"
+                          >Ver Galería</a
+                          >
                      </div>
-            </article>
+                </article>
+                <article
+                    class="tarjeta"
+                    aria-label="presentacion de proyectos fotográficos"
+                >
+                  <a class="enlaces_enlace enlaces_enlaces__galeria"
+                     href="/politicos/galeria-politicos.html" 
+                     target="_blank">
+                     <img
+                       class="tarjeta__imagen"
+                       src="/politicos/DSC_0198 c 1.jpg"
+                       alt="foto wallpaper 1"
+                       title="Galeria de fotos institucionales"
+                     >
+                 </a>
+                     
+                     <div class="tarjeta__contenido">
+                        <h3 class="tarjeta__titulo" id="titulo_proyecto_2"> Galeria Fotos Institucionales </h3>
+                        <span class="tarjeta__divisor"></span>
+                        <p
+                         class="tarjeta__parrafo scroll scroll_fino"
+                         aria-label="descripcion de proyecto personal"
+                         aria-describedby="Eventos políticos"
+                        >
+                        Trabajos de realizados como Prensa desde 2017 hasta la actualidad.
+                         </p>
+                         <a href="/politicos/galeria-politicos.html" class="boton boton_oscuro" target="_blank"
+                          >Ver Galería</a
+                           >
+                     </div>
+                </article>
              </div>
         </article>
     </main> 
