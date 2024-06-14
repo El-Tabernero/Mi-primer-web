@@ -184,9 +184,9 @@ body {
 .seccion_descripcion__imagen:focus{
     width: 80%;
     height: 80%;
-    padding: 10%;
+    padding: 7%;
     background-color: var(--texto-primario);
-    left: 0;
+    left: 80px;
     top: 0;
     border-radius: 20px;
     transform: translateX(0);
