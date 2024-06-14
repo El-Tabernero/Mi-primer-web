@@ -127,10 +127,10 @@ body {
 }
 #proyectos{
     background: linear-gradient(
-        180deg,
-        #494863 0%,
-        #343355 75%,
-        var(--fondo-primario) 90%);
+        120deg,
+        #e69f4e77 0%,
+        #9ba1a5 55%,
+        rgb(189, 171, 92) 90%);
 }
 .articulo__titulo{
     font-size: var(--titulo-tamanio);
@@ -158,39 +158,20 @@ body {
 .seccion__descripcion__porta__retrato{
     height: 300px;
     width: 300px;
-    padding: 10px;
+    display: flex;
     background-color: var(--texto-primario);
     cursor: pointer;
 }
 
 .seccion_descripcion__imagen{
     width: 300px;
-    height: 300px;
-    padding: 10px;
-    padding-bottom: 50px;
+    padding: 20px;
+    padding-bottom: 40px;
     background-color: var(--texto-primario);
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    object-fit: cover;
-    transition: left 0.3s ease, right 0.3s ease, top 0.3s ease,
-    bottom 0.3s ease, width 0.3s ease, height 0.3s ease, padding 0.3s ease,
-    background-color 0.3s ease, transform 0.3s ease,
-    border-radius 0.1s 0.01s ease;
+    position: absolute; 
+    display: flex;   
 }
 
-.seccion_descripcion__imagen:hover,
-.seccion_descripcion__imagen:focus{
-    width: 80%;
-    height: 80%;
-    padding: 7%;
-    background-color: var(--texto-primario);
-    left: 80px;
-    top: 0;
-    border-radius: 20px;
-    transform: translateX(0);
-}
 
 .seccion_descripcion__info{
     display: flex;
@@ -394,5 +375,119 @@ body {
     100% {
         filter: drop-shadow(0 0 6px var(--color-cambiar));
         color: var(--color-cambiar);
+    }
+}
+
+@media (max-width: 1700px){
+    .presentación__titulo{
+        font-size: var(--presentacion-titulo-tamanio-grande);
+    }
+    .articulo{
+        height: max-content;
+        justify-content: flex-start;
+    }
+    .tarjeta__contenido .boton {
+        align-self: center;
+    }
+}
+@media (max-width: 1200px){ 
+    .presentacion__contenedor_info{
+        justify-content: flex-end;
+        background: linear-gradient(90deg, var(--fondo-primario-transparente) 40%, transparent 60%);
+    }
+    .contenedor_tarjetas_grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr auto;
+    }
+    .articulo__contenedor_descripciones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .seccion_descripcion{
+        height: max-content;
+        gap: 1rem;
+    }
+    .seccion_descripcion__info{
+        height: 300px;
+    }
+    .pie_de_pagina{
+        height: max-content;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 892px){
+    .presentacion__contenedor_info{
+        background: linear-gradient(90deg, var(--fondo-primario-transparente) 0%, transparent 90%);
+    }
+    .boton {
+        width: 140px;
+    }
+    .articulo{
+        padding: 2rem 6rem;
+    }
+}
+
+@media(max-width: 768px){
+    .navegacion{
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--fondo-primario-transparente);
+    }
+    .enlaces{
+        width: 80%;
+    }
+    .enlaces_redes{
+        width: 100%;
+    }
+    .enlaces_vertical{
+        width: 100%;
+    }
+    .articulo{
+        padding: 2rem;
+        overflow-x: hidden;
+    }
+    .tarjeta__contenido .boton {
+        align-self: center;
+    }
+    .pie_de_pagina {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .pie_de_pagina_columna{
+        flex-basis: 150px;
+        width: 100%;
+    }
+}
+@media (max-width: 576px){
+    .presentacion__titulo{
+        font-size: var(--titulo-tamanio);
+    }
+    .presentacion__contenedor_botones{
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .seccion__descripcion {
+        padding: 20px;
+    }
+    .seccion_descripcion__info{
+        padding: 20px;
+    }
+    .seccion_descripcion__imagen{
+        top: 20px;
+    }
+    .seccion_descripcion__imagen:hover,
+    .seccion_descripcion__imagen:focus{
+        object-fit: contain;
+    }
+    .contenedor_tarjetas_grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .boton{
+        width: 120px;
     }
 }
