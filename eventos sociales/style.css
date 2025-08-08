@@ -29,7 +29,7 @@ html{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: linear-gradient(rgb(72, 38, 92), rgb(23, 15, 32));
+    background: linear-gradient(rgb(110, 67, 134), rgb(23, 15, 32));
 }
 .navegacion__titulo{
     font-size: 40px;
@@ -38,6 +38,31 @@ html{
 .enlaces__enlace{
 
     color: white;
+}
+
+.video-container{
+    display:flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    gap: 15px;
+    justify-content: center;
+    padding: 180px;
+    
+}
+
+.video-container .video{
+    height: 320px;
+    width: 560px;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.7);
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+.video-container .video video{
+    
 }
 
 body{
